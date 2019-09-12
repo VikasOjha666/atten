@@ -2,12 +2,11 @@ from flask import request
 from flask import Flask,jsonify
 import numpy as np
 import cv2
-import eventlet
+
 from Main import get_attendence
 from prepare_embeddings import get_single_embedding
 from Database import delete_student
-import socketio
-sio=import socketio.Server()
+
 app = Flask(__name__)
 
 @app.route('/getAttendence',methods=['POST'])
