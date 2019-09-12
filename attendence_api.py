@@ -46,4 +46,3 @@ def deleteStudent():
      delete_student(rollno)
      return str("Deleted the student.")
 
-app.run(host='"0.0.0.0",port=5000)
