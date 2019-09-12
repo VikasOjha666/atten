@@ -45,4 +45,4 @@ def deleteStudent():
     if methReq=="delete":
      delete_student(rollno)
      return str("Deleted the student.")
-
+app.run(port=5000)
