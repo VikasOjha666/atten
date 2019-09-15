@@ -1,6 +1,6 @@
 from pymongo import MongoClient
-client=MongoClient('localhost',27017)
-db=client.Attendence_database
+client = MongoClient("mongodb+srv://darkemperorVKO:HaloReach666@cluster0-jr8zu.mongodb.net/test?retryWrites=true&w=majority")
+db = client.test
 collection=db.Attendence_collection_db
 #collection.insert_one({'Name':'Vikas'})
 

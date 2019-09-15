@@ -15,7 +15,7 @@ import keras
 
 
 
-model = load_model('facenet_keras.h5')
+model = load_model('facenet_model.h5')
 global graph
 graph = tf.get_default_graph()
 
