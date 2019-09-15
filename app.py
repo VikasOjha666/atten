@@ -8,10 +8,7 @@ from prepare_embeddings import get_single_embedding
 from Database import delete_student
 
 app = Flask(__name__)
-app.logger.info("Starting...")
-app.config['SECRET_KEY'] = secret
-app.logger.critical("secret: %s" % secret)
-socketio = SocketIO(app)
+
 
 @app.route('/getAttendence',methods=['POST'])
 def getAttendence():
@@ -50,4 +47,4 @@ def deleteStudent():
      delete_student(rollno)
      return str("Deleted the student.")
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    app.run()
